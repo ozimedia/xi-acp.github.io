@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>XI ACP</title>
+
+  <!-- ICON -->
+  <link href="gambar/LOGO.png" type="image/png" rel="icon">
+
+  <!-- PHOSPHOR ICON -->
+  <script src="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.2"></script>
+
+  <!-- ===== CSS (MERGED) ===== -->
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: rgb(86, 86, 88);
+      min-height: 2000px;
+    }
+
+    nav {
+      background-color: aliceblue;
+      display: flex;
+      border-radius: 20px;
+      padding: 1rem 2rem;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav img {
+      width: 70px;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 1rem;
+      align-items: center;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      font-weight: 600;
+      color: black;
+      padding: 3px;
+      transition: 0.3s;
+      border-bottom: 2px solid transparent;
+    }
+
+    nav ul li a:hover {
+      color: red;
+      border-bottom: 2px solid red;
+    }
+
+    .menu-icon {
+      font-size: 30px;
+      display: none;
+      cursor: pointer;
+    }
+
+    main {
+      padding-top: 7rem;
+    }
+
+    /* HERO */
+    .hero {
+      min-height: 150vh;
+      display: flex;
+      align-items: center;
+      background: url(gambar/bg.jpg) no-repeat center/cover;
+      position: relative;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        0deg,
+        rgb(86, 86, 88) 3%,
+        rgba(255, 255, 255, 0) 25%
+      );
+    }
+
+    .hero .content {
+      padding: 1.4rem 7%;
+      max-width: 60rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero h1 {
+      font-size: 4em;
+      color: white;
+    }
+
+    .hero p {
+      font-size: 1.5rem;
+      color: white;
+      margin-top: 1rem;
+    }
+
+    /* ABOUT */
+    .about,
+    .moment,
+    .picket {
+      padding: 10rem 10%;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 2.6rem;
+      margin-bottom: 3rem;
+      color: white;
+    }
+
+    .row {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+    }
+
+    img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 1rem;
+    }
+
+    .content h3,
+    p {
+      color: white;
+    }
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+      nav {
+        flex-wrap: wrap;
+        width: 100%;
+        top: 0;
+      }
+
+      nav ul {
+        flex-direction: column;
+        width: 100%;
+      }
+
+      .menu-icon {
+        display: block;
+      }
+
+      nav ul.hidden {
+        display: none;
+      }
+
+    .picket h3 {
+      text-align: center;
+      color: white;
+    }
+
+    .copyright p {
+      text-align: center;
+      color: white;
+      font-size: 14px;
+    }
+
+    }
+  </style>
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <nav>
+    <img src="gambar/LOGO.png" alt="XI ACP" />
+    <div id="icon" class="menu-icon">
+      <i class="ph ph-list"></i>
+    </div>
+    <ul id="menu-list" class="hidden">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#moment">Moment</a></li>
+      <li><a href="#picket">Picket</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <main class="content">
+      <h1>KELAS XI AXIOO CLASS PROGRAM</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </main>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="about">
+    <h2>TENTANG KAMI</h2>
+    <div class="row">
+      <div>
+        <img src="gambar/momen 1.jpg" />
+        <img src="gambar/momen2.jpg" />
+      </div>
+      <div class="content">
+        <h3>Axioo sangat menyenangkan!</h3>
+        <p>Lorem ipsum dolor sit amet.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- MOMENT -->
+  <section id="moment" class="moment">
+    <h2>MOMENT OF CLASS</h2>
+    <div class="row">
+        <div>
+
+            <img src="gambar/momen3.jpg" />
+            <img src="gambar/momen4.jpg" />
+            <img src="gambar/momen8.jpg" />
+        
+        </div>
+        <div>
+            <img src="gambar/moment5.jpg" alt="">
+            <img src="gambar/moment6.jpg" alt="">
+            <img src="gambar/momen7.jpg" alt="">
+        </div>
+        <div>
+            <img src="gambar/moment 10.jpg" alt="">
+            <img src="gambar/moment11.jpg" alt="">
+            <img src="gambar/moment9.jpg" alt="">
+        </div>
+    </div>
+  </section>
+
+  <!-- PICKET -->
+  <section id="picket" class="picket">
+    <h2>PICKET OF CLASS</h2>
+    <div class="row">
+      <div>
+        <h3>SENIN</h3>
+        <img src="gambar/senin.jpg" />
+        <h3>SELASA</h3>
+        <img src="gambar/selasa.jpg" alt="">
+        <h3>RABU</h3>
+        <img src="gambar/rabu.jpg" alt="">
+      </div>
+      <div>
+        <h3>KAMIS</h3>
+        <img src="gambar/kamis.jpg" />
+        <h3>JUMAT</h3>
+        <img src="gambar/jumat.jpg" alt="">
+      </div>
+    </div>
+    <p>NB: piket yang bersih ya!</p>
+  </section>
+
+  <div class="copyright">
+    <p>Created by Fauzi Mubarok</p>
+    <p>© 2025</p>
+  </div>
+
+  <!-- ===== JS (MERGED) ===== -->
+  <script>
+    const menuIcon = document.getElementById("icon");
+    const menuList = document.getElementById("menu-list");
+
+    menuIcon.addEventListener("click", () => {
+      menuList.classList.toggle("hidden");
+    });
+  </script>
+</body>
+</html>
